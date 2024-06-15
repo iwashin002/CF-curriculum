@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.header{
+    background-color: red;
+}
+.main{
+    background-color: blue;
+}
+.footer{
+    background-color: yellow;
+}
