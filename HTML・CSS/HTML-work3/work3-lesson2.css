@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .header{
-    display: inline-block;
+    display: flex;
 }
 h1{
     width: 500px;
