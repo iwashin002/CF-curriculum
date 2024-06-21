@@ -11,11 +11,22 @@ body{
 }
 
 /* ここから処理を記述 */
-header{
+.ALL{
     background-color: aquamarine;
     height: 100px;
     width: 100%;
 }
 .logo{
     height: 100px;
+}
+h1{
+    font-size: 20px;
+}
+.linkA{
+    display: inline-block;
+    margin-right: 15%;
+}
+li{
+    display: inline-block;
+    margin-right: 10px;
 }
