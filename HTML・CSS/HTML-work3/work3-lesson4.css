@@ -11,4 +11,11 @@ body{
 }
 
 /* ここから処理を記述 */
-
+header{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100%;
+}
+.logo{
+    height: 100px;
+}
