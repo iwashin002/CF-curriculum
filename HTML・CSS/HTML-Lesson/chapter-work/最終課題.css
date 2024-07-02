@@ -1,10 +1,41 @@
 @charset "UTF-8";
+.midashi{
+    background-color: aqua;
+    display: block;
+    width: 150px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+.itiran{
+    background-color: gray;
+    color: white;
+    display: block;
+    width: 200px;
+    height: 300px;
+    margin-left: 85%;
+}
 .madoguti{
-    background-color: white;
+    background-color: red;
+    display: block;
+    width: 200px;
+    margin-left: 85%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    
 }
 .hasshin{
-    background-color: white;
+    background-color: yellow;
+    display: block;
+    width: 200px;
+    margin-left: 85%;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
 .danjiri{
-    background-color: white;
+    background-color: green;
+    display: block;
+    width: 200px;
+    margin-left: 85%;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
