@@ -1,0 +1,34 @@
+@charset "UTF-8";
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.left {
+    width: 70%;
+}
+.left img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.right {
+    width: 30%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.link-block {
+    margin: 10px 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.link-block a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
