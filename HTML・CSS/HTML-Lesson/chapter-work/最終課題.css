@@ -1,27 +1,40 @@
 @charset "UTF-8";
+header{
+    display: flex;
+}
 .midashi{
     background-color: aqua;
     display: block;
     width: 150px;
-    margin-bottom: 0%;
     margin-top: 0%;
+    margin-bottom: 0%;
+    margin-right: 650px;
+}
+.SNS_logo{
+    width: 50px;
+}
+.kishiwada-jo{
+    width: 1000px;
+    margin-right: 0%;
 }
 .itiran{
     background-color: gray;
     color: white;
     display: block;
     width: 200px;
-    height: 300px;
+    height: 100px;
+    margin-bottom: 0%;
+    margin-top: 0%;
     margin-left: 85%;
+    text-align: center;
 }
 .madoguti{
     background-color: red;
     display: block;
     width: 200px;
     margin-left: 85%;
-    margin-bottom: 0%;
-    margin-top: 0%;
     
+    text-align: center;
 }
 .hasshin{
     background-color: yellow;
@@ -30,6 +43,7 @@
     margin-left: 85%;
     margin-bottom: 0%;
     margin-top: 0%;
+    text-align: center;
 }
 .danjiri{
     background-color: green;
@@ -38,4 +52,5 @@
     margin-left: 85%;
     margin-bottom: 0%;
     margin-top: 0%;
+    text-align: center;
 }
