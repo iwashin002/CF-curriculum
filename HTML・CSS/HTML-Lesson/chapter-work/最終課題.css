@@ -2,20 +2,27 @@
 header{
     display: flex;
 }
+body{
+    background-image: url(./image/kishiwada-jo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.kishiwada_logo{
+    display: flex;
+    width: 60px;
+}
 .midashi{
-    background-color: aqua;
+    color: white;
     display: block;
     width: 200px;
     margin-top: 0%;
     margin-bottom: 0%;
-    margin-right: 650px;
+    margin-right: 570px;
 }
+
 .SNS_logo{
     width: 50px;
-}
-.kishiwada-jo{
-    width: 1000px;
-    margin-right: 0%;
 }
 .itiran{
     background-color: gray;
@@ -26,10 +33,16 @@ header{
     margin-left: 85%;
     margin-bottom: 0%;
     margin-top: 0%;
-    padding-top: 20px;
+    padding-top: 15px;
+    line-height: 15px;
+    border-style: solid;
+    border-color: gray;
+}
+.itiran span{
+    font-size: 60px;
 }
 .madoguti{
-    background-color: red;
+    background-color: white;
     display: block;
     width: 200px;
     height: 150px;
@@ -37,9 +50,11 @@ header{
     margin-bottom: 0%;
     margin-top: 0%;
     padding-top: 75px;
+    border-style: solid;
+    border-color: gray;
 }
 .hasshin{
-    background-color: yellow;
+    background-color: white;
     display: block;
     width: 200px;
     height: 150px;
@@ -47,14 +62,18 @@ header{
     margin-bottom: 0%;
     margin-top: 0%;
     padding-top: 75px;
+    border-style: solid;
+    border-color: gray;
 }
 .danjiri{
-    background-color: green;
+    background-color: white;
     display: block;
     width: 200px;
     height: 150px;
     margin-left: 85%;
     margin-bottom: 0%;
     margin-top: 0%; 
-    padding-top: 75px;   
+    padding-top: 75px; 
+    border-style: solid;
+    border-color: gray;  
 }
