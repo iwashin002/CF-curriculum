@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header{
-    display: flex;
+    display: inline-flex;
 }
 body{
     background-image: url(./image/kishiwada-jo.jpg);
@@ -18,7 +18,7 @@ body{
     width: 200px;
     margin-top: 0%;
     margin-bottom: 0%;
-    margin-right: 570px;
+    margin-right: 580px;
 }
 .SNS_logo{
     width: 50px;
@@ -29,7 +29,7 @@ body{
     display: block;
     width: 200px;
     height: 70px;
-    margin-left: 0%;
+    margin-left: 85%;
     margin-bottom: 0%;
     margin-top: 0%;
     padding-top: 15px;
@@ -45,7 +45,7 @@ body{
     display: block;
     width: 200px;
     height: 150px;
-    margin-left: 1100px;
+    margin-left: 85%;
     margin-bottom: 0%;
     margin-top: 0%;
     padding-top: 75px;
@@ -57,7 +57,7 @@ body{
     display: block;
     width: 200px;
     height: 150px;
-    margin-left: 1100px;
+    margin-left: 85%;
     margin-bottom: 0%;
     margin-top: 0%;
     padding-top: 75px;
@@ -69,7 +69,7 @@ body{
     display: block;
     width: 200px;
     height: 150px;
-    margin-left: 1100px;
+    margin-left: 85%;
     margin-bottom: 0%;
     margin-top: 0%; 
     padding-top: 75px; 
