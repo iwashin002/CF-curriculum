@@ -1,0 +1,78 @@
+@charset "UTF-8";
+header{
+    display: flex;
+}
+body{
+    background-image: url(./image/kishiwada-jo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.kishiwada_logo{
+    display: flex;
+    width: 60px;
+}
+.midashi{
+    color: white;
+    display: block;
+    width: 200px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-right: 570px;
+}
+.SNS_logo{
+    width: 50px;
+}
+.itiran{
+    background-color: gray;
+    color: white;
+    display: block;
+    width: 200px;
+    height: 70px;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-top: 15px;
+    line-height: 15px;
+    border-style: solid;
+    border-color: gray;
+}
+.itiran span{
+    font-size: 60px;
+}
+.madoguti{
+    background-color: white;
+    display: block;
+    width: 200px;
+    height: 150px;
+    margin-left: 1100px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-top: 75px;
+    border-style: solid;
+    border-color: gray;
+}
+.hasshin{
+    background-color: white;
+    display: block;
+    width: 200px;
+    height: 150px;
+    margin-left: 1100px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-top: 75px;
+    border-style: solid;
+    border-color: gray;
+}
+.danjiri{
+    background-color: white;
+    display: block;
+    width: 200px;
+    height: 150px;
+    margin-left: 1100px;
+    margin-bottom: 0%;
+    margin-top: 0%; 
+    padding-top: 75px; 
+    border-style: solid;
+    border-color: gray;  
+}
