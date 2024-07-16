@@ -21,7 +21,7 @@ body{
     margin-right: 580px;
 }
 .SNS_logo{
-    width: 50px;
+    width: 18%;
 }
 .itiran{
     background-color: gray;
@@ -29,7 +29,7 @@ body{
     display: block;
     width: 200px;
     height: 70px;
-    margin-left: 85%;
+    margin-left: 0%;
     margin-bottom: 0%;
     margin-top: 0%;
     padding-top: 15px;
@@ -47,7 +47,7 @@ body{
     height: 150px;
     margin-left: 85%;
     margin-bottom: 0%;
-    margin-top: 0%;
+    margin-top: 0%; 
     padding-top: 75px;
     border-style: solid;
     border-color: gray;
@@ -59,7 +59,7 @@ body{
     height: 150px;
     margin-left: 85%;
     margin-bottom: 0%;
-    margin-top: 0%;
+    margin-top: 0%; 
     padding-top: 75px;
     border-style: solid;
     border-color: gray;
@@ -75,4 +75,10 @@ body{
     padding-top: 75px; 
     border-style: solid;
     border-color: gray;  
+}
+.awase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
