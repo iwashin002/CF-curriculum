@@ -1,27 +1,28 @@
 @charset "UTF-8";
-header{
-    display: inline-flex;
-}
+
 body{
     background-image: url(./image/kishiwada-jo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+.leftside{
+    display: flex;
+}
 .kishiwada_logo{
     display: flex;
-    width: 60px;
+    width: 40px;
 }
 .midashi{
     color: white;
-    display: block;
+    display: inline;
     width: 200px;
     margin-top: 0%;
     margin-bottom: 0%;
     margin-right: 580px;
 }
 .SNS_logo{
-    width: 18%;
+    width: 40px;
 }
 .itiran{
     background-color: gray;
@@ -29,7 +30,7 @@ body{
     display: block;
     width: 200px;
     height: 70px;
-    margin-left: 0%;
+    margin-left: 85%;
     margin-bottom: 0%;
     margin-top: 0%;
     padding-top: 15px;
@@ -75,10 +76,4 @@ body{
     padding-top: 75px; 
     border-style: solid;
     border-color: gray;  
-}
-.awase{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
