@@ -5,10 +5,12 @@
 }
 .leftside{
     display: flex;
+    height: 784px;
     background-image: url(./image/kishiwada-jo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: cover;
+   
 }
 
 .kishiwada_logo{
@@ -17,7 +19,7 @@
 .midashi{
     color: white;
     display: inline-block;
-    width: 800px;
+    width: 750px;
     height: 50px;
     margin-top: 0%;
     margin-bottom: 0%;
@@ -26,8 +28,13 @@
     font-size: 30px;
 }
 .SNS_logo{
-    width: 5%;
-    height: 8%;
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+}
+.S{
+    width: 65px;
+    height: 65px;
 }
 .itiran{
     background-color: gray;
