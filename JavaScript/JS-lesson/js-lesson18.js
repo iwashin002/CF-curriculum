@@ -23,3 +23,5 @@ console.log(numbers[3]);
 
 numbers[2] = 'ペルー';
 console.log(numbers[2]);
+
+console.log(numbers[0]);
