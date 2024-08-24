@@ -23,3 +23,4 @@ const man = {
   console.log(human.anime.girl.kimetu); // '禰豆子'を出力
   
   human.anime.man.onepiece = 'ルフィー'; // 'onepiece'の値を'ルフィー'に更新
+  
