@@ -19,17 +19,28 @@
     */
 
     //何か一つ組み込み関数を使い、その結果をechoで出力してください！（組み込み関数は、何でもいいです。）
-    
+    $drink ="水・サイダー・お茶・ビール・ウイスキー・ワイン";
 
+    $parts = explode("・", $drink);
 
+    print_r($parts);
+    echo "<br>";
     //二つの数値を引数として受け取り、それらの合計を返す関数addNumbersを作成してください。
-
-
-
+    function addNumbers($a,$b){
+      $sum = $a + $b;
+      return $sum;
+    }
+    $result = addNumbers(3,9);
+    echo $result;
+    echo "<br>";
     //文字列を引数として受け取り、その文字列が空でない場合はその文字列を、空の場合は"空の文字列"という文字列を返す関数checkStringを作成してください。
-
-
-
+    function checkString($str){
+      return !empty($str) ? $str : "空の文字列";
+    }
+    echo checkString("こんにちは！");
+    echo "<br>";
+    echo checkString("");
+    echo "<br>";
     // 配列を引数として受け取り、その配列の要素の数を返す関数countElementsを作成してください。
 
 
