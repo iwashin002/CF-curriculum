@@ -34,15 +34,15 @@
     echo $result;
     echo "<br>";
     //文字列を引数として受け取り、その文字列が空でない場合はその文字列を、空の場合は"空の文字列"という文字列を返す関数checkStringを作成してください。
-    function checkString($str){
-      return !empty($str) ? $str : "空の文字列";
+    function checkString($mozi){
+      return !empty($mozi) ? $mozi : "空の文字列";
     }
     echo checkString("こんにちは！");
     echo "<br>";
     echo checkString("");
     echo "<br>";
     // 配列を引数として受け取り、その配列の要素の数を返す関数countElementsを作成してください。
-
+    
 
     /*
       下記の$secretの文字列はシーザー暗号化されています。

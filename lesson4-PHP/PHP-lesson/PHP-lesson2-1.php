@@ -59,8 +59,15 @@
     */
 
     //この下に記述してください
+    $nowyear = date("Y");
 
-    
+    for($year = 1990;$year <= $nowyear ;$year++){
+        if(($year % 4 == 0 && $year % 100 != 0) ||($year % 400 == 0)){
+            echo $year."はうるう年です。\n";
+        }else{
+            echo $year."はうるう年ではありません。\n";
+        }
+    }
 ?>
 <div>
 </body>
