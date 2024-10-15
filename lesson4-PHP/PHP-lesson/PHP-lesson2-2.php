@@ -35,7 +35,22 @@
     */
 
     //この下に記述してください
+    $money = 20000;
+    $product_price = rand(1,20000);
 
+    $change = $money - $product_price;
+    $denominations = [5000,1000,500,100,50,10,5,1];
+
+    echo "商品の値段：" .number_format($product_price) . "円\n";
+    echo "おつり" .number_format($change) . "円\n";
+
+    foreach($denominations as $denomination){
+        $count = floor($change / $denomination);
+        if($count > 0){
+            echo $denomination . "円：" . $count . "枚\n";
+        }
+        $change -= $count * $denomination;
+    }
     
 ?>
 <div>
