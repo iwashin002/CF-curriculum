@@ -8,10 +8,10 @@ if(isset($_SESSION['error_message'])){
 if(isset($_SESSION["input_data"])){
     $data=$_SESSION["input_data"];
 }
-if(!isset($_POST)||$_SERVER["REQUEST_METHOD"] !="POST"){
-    header('location:PHP-lesson3-1-form.php');
-    exit();
-}
+//if(!isset($_POST)||$_SERVER["REQUEST_METHOD"] !="POST"){
+//    header('location:PHP-lesson3-1-form.php');
+//    exit();
+//}
 ?>
 
 
