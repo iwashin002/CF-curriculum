@@ -11,3 +11,6 @@
   2.  Booksテーブルから、authorカラムがNULLであるレコードを取得するSQL
   3.  Booksテーブルから、PublicationYearカラムが1997以上のレコードを、PublicationYearが高い順に、最大取得件数が２件になるよう取得するSQL。
 */
+1.SELECT * FROM Books WHERE Title LIKE '%進撃%';
+2.SELECT * FROM Books WHERE AUthor is NULL ;
+3.SELECT * FROM Books WHERE PublicationYear >= 1997 ORDER BY PublicationYear DESC LIMIT 2 ;
