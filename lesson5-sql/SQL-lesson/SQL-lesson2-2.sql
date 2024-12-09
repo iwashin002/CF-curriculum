@@ -16,3 +16,4 @@
   +----------------------------------+
 */
 
+SELECT title FROM Books JOIN Reviews on Books.ID = Reviews.BookID and Reviews.Score <=3 ;
