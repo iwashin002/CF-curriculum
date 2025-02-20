@@ -22,3 +22,12 @@
 +------------+--------------------------+----------------------+------------------+-------------------+--------------+-----------------------+
 
 */
+SELECT bookmain.ID AS book_id,bookmain.Title,bookmain.Author ,bookmain.PublicationYear ,bookmain.ISBN ,bookmain.Genre,Genretable.average_rating 
+FROM Books bookmain
+LEFT JOIN 
+(SELECT Genre,AVG(Score) AS average_rating
+    FROM Books b
+    LEFT JOIN Reviews r ON b.ID = r.BookID 
+    GROUP BY Genre) AS Genretable
+ ON bookmain.Genre = Genretable.Genre;
+ 
