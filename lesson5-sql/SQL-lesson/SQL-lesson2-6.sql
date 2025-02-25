@@ -18,3 +18,5 @@
 +--------------------+
 
 */
+
+SELECT Author FROM Books WHERE NOT Genre ='SF';
