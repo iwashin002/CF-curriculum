@@ -19,6 +19,7 @@ services:
       - app
   db:
     image: mysql:5.7
+    platform: linux/amd64
     container_name: db
     environment:
       MYSQL_ROOT_PASSWORD: cf1234
