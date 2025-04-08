@@ -1,0 +1,15 @@
+@extends('layouts.app')
+
+@section('content')
+    <h1>Create New Contact</h1>
+    <form>
+        @csrf
+        <label for="name">Name:</label>
+        <!-- この行にinputを追加 -->
+        <label for="phone_number">Phone Number:</label>
+        <!-- この行にinputを追加 -->
+        <label for="email">Email:</label>
+        <!-- この行にinputを追加 -->
+        <button type="submit">Create</button>
+    </form>
+@endsection
