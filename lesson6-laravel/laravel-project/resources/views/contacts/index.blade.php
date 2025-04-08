@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Contacts</h1>
-    <a class="btn btn-primary">新規作成</a>
+    <a href="{{ route('contact.create') }}" class="btn btn-primary">新規作成</a>
     <table class="table">
         <thead>
             <tr>
@@ -19,7 +19,7 @@
                     <td>携帯番号の表示</td>
                     <td>E-maileの表示</td>
                     <td>
-                        <a class="btn btn-primary">Edit</a>
+                        <a href="{{ route('contact.edit') }}" class="btn btn-primary">Edit</a>
                         <!-- 削除ボタンを追加 -->
                         <form style="display: inline;">
                             <button type="submit" class="btn btn-danger">Delete</button>
