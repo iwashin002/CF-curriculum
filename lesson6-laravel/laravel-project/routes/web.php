@@ -25,4 +25,5 @@ Route::get('/contacts/edit', [App\Http\Controllers\HomeController::class, 'edit'
 
 Route::get('/home/create', [App\Http\Controllers\HomeController::class, 'create'])->name('contact.create');
 
+Route::post('/contacts',[App\Http\Controllers\HomeController::class,'store'])->name('contact.store');
 
