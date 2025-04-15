@@ -21,9 +21,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/contacts/edit', [App\Http\Controllers\HomeController::class, 'edit'])->name('contact.edit');
-
 Route::get('/home/create', [App\Http\Controllers\HomeController::class, 'create'])->name('contact.create');
+
+Route::get('/contacts/edit', [App\Http\Controllers\HomeController::class, 'edit'])->name('contact.edit');
 
 Route::post('/contacts',[App\Http\Controllers\HomeController::class,'store'])->name('contact.store');
 
