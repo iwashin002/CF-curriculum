@@ -37,7 +37,7 @@ class HomeController extends Controller
     public function store(Request $request)
     {
         $request->merge(['user_id' => Auth::user()->id]);
-        Contact::create($request->all());
+        Contacts::create($request->all());
         return redirect()->route('home');
     }
 }
