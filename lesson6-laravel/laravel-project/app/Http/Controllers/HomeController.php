@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
-use App\Models\Contacts;
+use App\Models\Contact;
 
 class HomeController extends Controller
 {
@@ -37,7 +37,7 @@ class HomeController extends Controller
     public function store(Request $request)
     {
         $request->merge(['user_id' => Auth::user()->id]);
-        Contacts::create($request->all());
+        Contact::create($request->all());
         return redirect()->route('home');
     }
 }
