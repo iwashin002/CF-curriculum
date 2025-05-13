@@ -19,7 +19,7 @@
                     <td>{{ $contact->phone_number }}</td>
                     <td>{{ $contact->email }}</td>
                     <td>
-                        <a href="{{ route('contact.edit') }}" class="btn btn-primary">Edit</a>
+                        <a href="{{ route('contact.edit',$contact) }}" class="btn btn-primary">Edit</a>
                         <!-- 削除ボタンを追加 -->
                         <form action="{{ route('contact.destroy', $contact) }}" method="POST" style="display: inline;">
                             @csrf

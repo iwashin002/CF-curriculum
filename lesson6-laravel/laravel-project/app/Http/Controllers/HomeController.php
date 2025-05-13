@@ -26,9 +26,9 @@ class HomeController extends Controller
         return view('contacts.index',compact('contacts'));
     }
 
-    public function edit()
+    public function edit(Contact $contact)
     {
-        return view('contacts.edit');
+        return view('contacts.edit', compact('contact'));
     }
 
     public function create()
@@ -48,5 +48,11 @@ class HomeController extends Controller
         $contact->delete();
         return redirect()->route('home');
 
+    }
+
+    public function update(Request $request, Contact $contact)
+    {
+        $contact->update($request->all());
+        return redirect()->route('home');
     }
 }
