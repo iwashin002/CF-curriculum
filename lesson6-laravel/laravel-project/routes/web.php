@@ -27,3 +27,4 @@ Route::get('/contacts/edit', [App\Http\Controllers\HomeController::class, 'edit'
 
 Route::post('/contacts',[App\Http\Controllers\HomeController::class,'store'])->name('contact.store');
 
+Route::delete('/contacts/{contact}',[App\Http\Controllers\Homecontroller::class,'destroy'])->name('contact.destroy');

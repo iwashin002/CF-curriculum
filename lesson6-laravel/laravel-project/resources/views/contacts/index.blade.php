@@ -13,20 +13,22 @@
             </tr>
         </thead>
         <tbody>
-            
+            @foreach($contacts as $contact)
                 <tr>
-                    <td>名前の表示</td>
-                    <td>携帯番号の表示</td>
-                    <td>E-maileの表示</td>
+                    <td>{{ $contact->name }}</td>
+                    <td>{{ $contact->phone_number }}</td>
+                    <td>{{ $contact->email }}</td>
                     <td>
                         <a href="{{ route('contact.edit') }}" class="btn btn-primary">Edit</a>
                         <!-- 削除ボタンを追加 -->
-                        <form style="display: inline;">
+                        <form action="{{ route('contact.destroy', $contact) }}" method="POST" style="display: inline;">
+                            @csrf
+                            @method('DELETE')
                             <button type="submit" class="btn btn-danger">Delete</button>
                         </form>
                     </td>
                 </tr>
-            
+            @endforeach
         </tbody>
     </table>
 @endsection

@@ -21,7 +21,9 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('contacts.index');
+        $user = auth()->user();
+        $contacts = Contact::where('user_id',$user->id)->get(); 
+        return view('contacts.index',compact('contacts'));
     }
 
     public function edit()
@@ -39,5 +41,12 @@ class HomeController extends Controller
         $request->merge(['user_id' => Auth::user()->id]);
         Contact::create($request->all());
         return redirect()->route('home');
+    }
+
+    public function destroy(Contact $contact)
+    {
+        $contact->delete();
+        return redirect()->route('home');
+
     }
 }
