@@ -30,11 +30,15 @@ class HomeController extends Controller
     {
         return view('contacts.edit', compact('contact'));
     }
-
+    //課題②で作成
     public function create()
     {
-        return view('contacts.create');
+        $user = auth()->user();
+        $createContacts = Contact::where('user_id', $user->id)->get();
+        return view('contacts.create' , compact('createContacts'));
     }
+
+
 
     public function store(Request $request)
     {
@@ -55,4 +59,6 @@ class HomeController extends Controller
         $contact->update($request->all());
         return redirect()->route('home');
     }
+
+
 }

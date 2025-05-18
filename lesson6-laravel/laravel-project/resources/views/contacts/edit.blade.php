@@ -16,4 +16,12 @@
         <!-- この行にメールアドレスのinputを追加 -->
         <button type="submit">Update</button>
     </form>
+     <!--↓課題①-->   
+     <form action="{{ route('contact.destroy', $contact) }}" method="POST" style="display: inline;">
+        @csrf
+        @method('DELETE')
+        <button type="submit">Delete</button>
+    </form>
+
+    
 @endsection
