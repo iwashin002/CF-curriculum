@@ -22,29 +22,5 @@
         @method('DELETE')
         <button type="submit">Delete</button>
     </form>
-    <!--↓課題③-->
-    @foreach($errors->all() as $error)
-               <li>{{$error}}</li>
-            @endforeach
-            @foreach($errors->all() as $error)
-               <li>{{$error}}</li>
-            @endforeach
-
-            @foreach($createContacts as $contact)
-                <tr>
-                    <td>{{ $contact->name }}</td>
-                    <td>{{ $contact->phone_number }}</td>
-                    <td>{{ $contact->email }}</td>
-                    <td>
-                        <a href="{{ route('contact.edit',$contact) }}" class="btn btn-primary">Edit</a>
-                        <!-- 削除ボタンを追加 -->
-                        <form action="{{ route('contact.destroy', $contact) }}" method="POST" style="display: inline;">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                        </form>
-                    </td>
-                </tr>
-            @endforeach
-    <!--↑課題③-->
+   
 @endsection

@@ -39,10 +39,21 @@ class HomeController extends Controller
     }
 
 
-
     public function store(Request $request)
     {
         $request->merge(['user_id' => Auth::user()->id]);
+
+    //課題④・⑤
+    $validated = $request->validate([
+        'phone_number' => 'unique:contacts,phone_number|regex:/^[0-9]+$/',
+        'email' => 'unique:contacts,email',
+    ],
+    [
+        'phone_number.regex' => '数値を入力してください',
+        'phone_number.unique' => '電話番号は既に登録しています',
+        'email.unique' => 'メールアドレスは既に登録しています',   
+    ]);
+
         Contact::create($request->all());
         return redirect()->route('home');
     }
